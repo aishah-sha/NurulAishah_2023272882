@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <fieldset>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </br>
+        <br>
+        <label id="email-label" for="email">Email</label></br>
+        <input type="email" id="email" name="email" placeholder="Enter a valid email address" required></br>
+        <br>
+        <label id="number-label" for="age">Age</label></br>
+        <input type="number" id="number" name="age" min="15" max="80" placeholder="Enter your age (15-80)"required></br>
+        <br>
+        <label for="dropdown">Your current role</label></br>
+        <select id="dropdown" name="role">
+          <option value="">--Please choose the option--</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Joc</option>
+          <option value="full-time-learner">Full Time Learner</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <fieldset>
+          <legend>What do you prefer for lunch?</legend>
+          <input type="radio" id="western-food" name="lunch" value="western-food">
+          <label for="western-food">Western Food</label><br>
+
+          <input type="radio" id="malay-food" name="lunch" value="malay-food">
+          <label for="malay-food">Malay Food</label><br>
+
+          <input type="radio" id="chinese-food" name="lunch" value="chinese-food">
+          <label for="chinese-food">Chinese Food</label><br>
+
+          <input type="radio" id="others" name="lunch" value="others">
+          <label for="others">Others</label><br>
+        
+
+        <br>
+        <label>What drinks do you usually enjoy with lunch?</label><br>
+
+        <input type="checkbox" id="water" name="drink" value="water">
+        <label for="water">Water</label><br>
+
+        <input type="checkbox" id="coffee" name="drink" value="coffee">
+        <label for="coffee">Coffee</label><br>
+
+        <input type="checkbox" id="tea" name="drink" value="tea">
+          <label for="tea">Tea</label><br>
+
+        <input type="checkbox" id="others" name="drink" value="others">
+          <label for="others">Others</label><br>
+        </fieldset>
+
+        <br>
+        <label for="lunch-time">Preferred lunch time:</label>
+        <select id="lunch-time" name="lunch-time">
+          <option value="">--Select a time--</option>
+          <option value="11am">11:00 AM</option>
+          <option value="12pm">12:00 PM</option>
+          <option value="1pm">1:00 PM</option>
+          <option value="2pm">2:00 PM or later</option>
+        </select>
+        <br/><br>
+
+        <label for="feedback">Your suggestion or comment:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Type your thoughts here..."></textarea>
+        <br><br>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </fieldset>  
+  </body>
+</html>
