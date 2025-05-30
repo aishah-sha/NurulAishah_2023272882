@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piano Lesson Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header id="header">
+    <img id="header-img" src="https://cdn.vectorstock.com/i/1000v/19/78/piano-lesson-logo-ideas-education-hat-vector-28891978.jpg" alt="Piano Lessons Logo" />
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#video-section">Demo</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features">
+      <h2>Why Learn Piano With Us</h2>
+      <ul>
+        <li>Expert instructors with years of experience</li>
+        <li>Flexible lesson schedules</li>
+        <li>Courses for all skill levels</li>
+      </ul>
+    </section>
+
+    <section id="video-section">
+      <h2>Watch a Sample Lesson</h2>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/vphWgqbF-AM" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing">
+      <h2>Lesson Plans</h2>
+      <div class="pricing-container">
+        <div class="pricing-box">
+          <h3>Beginner</h3>
+          <p>$29.99/month</p>
+        </div>
+        <div class="pricing-box">
+          <h3>Intermediate</h3>
+          <p>$49.99/month</p>
+        </div>
+        <div class="pricing-box">
+          <h3>Advanced</h3>
+          <p>$69.99/month</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup">
+      <h2>Join Our Piano Community</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        <input type="submit" id="submit" value="Get Started" />
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
